@@ -1,50 +1,77 @@
-# Intro to React: Navbar Component
+# React Navbar
 
-A beginner-friendly introductory React project built for teaching students the core fundamentals of React components, CSS styling, and project structure.
-
-## Project Overview
-This repository contains a simple, clean, and responsive navigation bar component built using React (with Vite) and modular CSS. It serves as a practical hands-on example for learning component-based architecture.
+A small React and Vite project that demonstrates a reusable navigation bar. The navbar includes a logo, links for Home, About, and Company, and a Contact Us button.
 
 ## Features
-* Component-driven development (`Navbar` and `Button` components).
-* Modern CSS layout using Flexbox.
-* Fast development setup powered by Vite.
 
-## Getting Started
+- React component-based structure
+- Flexbox layout for the navigation bar
+- Separate JSX and CSS files for the navbar
+- Vite development and build setup
 
-Follow these steps to run the project locally on your machine:
+## Getting started
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Bohanos/react-intro-navbar.git](https://github.com/Bohanos/react-intro-navbar.git)
-Navigate into the project directory:
+### Requirements
 
-Bash
-cd react-intro-navbar
-Install dependencies:
+- Node.js and npm
 
-Bash
+### Install dependencies
+
+```bash
 npm install
-Start the development server:
+```
 
-Bash
+### Start the development server
+
+```bash
 npm run dev
+```
 
+Open the local URL printed by Vite in your terminal.
 
-Project Structure
-Plaintext
+### Build for production
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project structure
+
+```text
 new-app/
-├── public/
+├── public/                   # Static files served as-is
 ├── src/
+│   ├── assets/               # Images and other imported assets
 │   ├── components/
+│   │   ├── footer/            # Footer component area
 │   │   └── navbar/
-│   │       ├── Navbar.jsx
-│   │       └── Navbar.css
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── .gitignore
-├── index.html
-├── package.json
-└── vite.config.js# react-beginner-components
+│   │       ├── Navbar.jsx     # Navbar component and Contact Us button
+│   │       └── Navbar.css     # Navbar layout and styles
+│   ├── App.css                # App-level styles
+│   ├── App.jsx                # Application view; renders Navbar
+│   ├── index.css              # Global styles and reset
+│   └── main.jsx               # React entry point
+├── index.html                 # Vite HTML entry page
+├── package.json               # Project metadata, dependencies, and scripts
+├── package-lock.json          # Locked npm dependency versions
+├── vite.config.js             # Vite configuration
+└── README.md
+```
+
+## Navbar overview
+
+`src/App.jsx` renders the `Navbar` component. The component is defined in `src/components/navbar/Navbar.jsx`, with its layout styles in `Navbar.css`. The global stylesheet resets default spacing and applies `box-sizing: border-box`.
+
+The current navigation links have empty `href` values and are placeholders. Update them with the relevant page paths or URLs when those pages are available.
+
+## Built with
+
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- CSS
