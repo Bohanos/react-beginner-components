@@ -9,25 +9,35 @@ A small React and Vite project that demonstrates a reusable navigation bar. The 
 - Separate JSX and CSS files for the navbar
 - Vite development and build setup
 
-## Getting started
+## Getting Started
 
-### Requirements
+Follow these steps to run the project locally on your machine. Make sure Node.js and npm are installed.
 
-- Node.js and npm
+1. **Clone the repository:**
 
-### Install dependencies
+   ```bash
+   git clone https://github.com/Bohanos/react-intro-navbar.git
+   ```
 
-```bash
-npm install
-```
+2. **Navigate into the project directory:**
 
-### Start the development server
+   ```bash
+   cd react-intro-navbar
+   ```
 
-```bash
-npm run dev
-```
+3. **Install dependencies:**
 
-Open the local URL printed by Vite in your terminal.
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open the local URL printed by Vite in your terminal.
 
 ### Build for production
 
@@ -75,3 +85,4 @@ The current navigation links have empty `href` values and are placeholders. Upda
 - [React](https://react.dev/)
 - [Vite](https://vite.dev/)
 - CSS
+
